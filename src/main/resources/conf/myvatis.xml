@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <!--settings：控制mybatis全局行为-->
+    <!--<settings>
+        &lt;!&ndash;设置mybatis输出日志&ndash;&gt;
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>-->
+
+    <!--设置别名-->
+    <typeAliases>
+        <!--这样设置后，实体类的类名就是该类全限定名称的别名，用别名代表了包名+类名-->
+        <package name="com.linwei.domain"/>
+    </typeAliases>
+
+    <!-- sql mapper(sql映射文件)的位置-->
+    <mappers>
+        <!--name：代表包名，这个包中所有mapper.xml一次都能加载，不用一个个配置了-->
+        <package name="com.linwei.dao"/>
+    </mappers>
+</configuration>
