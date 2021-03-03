@@ -23,7 +23,7 @@
     <!--声明sqlSessionFactoryBean，创建sqlSessionFactory-->
     <bean name="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="myDataSource"/>
-        <property name="configLocation" value="classpath:conf/myvatis.xml"/>
+        <property name="configLocation" value="classpath:conf/mybatis.xml"/>
     </bean>
 
     <!--声明mybatis的扫描器，创建dao对象-->

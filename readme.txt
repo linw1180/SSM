@@ -5,7 +5,7 @@ SSM： SpringMVC + Spring + MyBatis.
 
 SpringMVC:视图层，界面层，负责接收请求，显示处理结果的。
 Spring：业务层，管理service，dao，工具类对象的。
-MyBatis：持久层， 访问数据库的
+MyBatis：持久层，访问数据库的。
 
 用户发起请求--SpringMVC接收--Spring中的Service对象--MyBatis处理数据
 
